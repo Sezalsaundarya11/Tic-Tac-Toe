@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Manrope:wght@200..800&display=swap');
+
+:root{
+    --dark-moss-green: #606c38ff;
+--pakistan-green: #283618ff;
+--cornsilk: #fefae0ff;
+--earth-yellow: #dda15eff;
+--tigers-eye: #bc6c25ff;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+body{
+    max-width:100%;
+    display:flex;
+    flex-direction: column;
+    gap:4rem;
+    background-color: var(--cornsilk);
+}
+
+nav{
+    display:grid;
+    place-items: center;
+    font-size: 1.8rem;
+    padding:1rem;
+    background-color: var(--earth-yellow);
+    word-spacing: 1rem;
+    max-width:100%;
+    color:var(--pakistan-green);
+}
+main{
+    display:grid;
+    place-items: center;
+    row-gap: 2rem;
+}
+
+.choices{
+    display: flex;
+    gap:5rem
+}
+.choice{
+    
+    width:165px;
+    height:165px;
+    border-radius: 50%;
+}
+.choice img{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.choice img:hover{
+    border:6px solid var(--dark-moss-green);
+    cursor: pointer;
+}
+.scores{
+    padding:2rem;
+    text-align: center;
+    display: flex;
+    gap:6rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color:var(--pakistan-green);
+}
+
+#score-btn{
+    background-color: var(--tigers-eye);
+    color:var(--cornsilk);
+    border:none;
+    border-radius: 10px;
+    padding:0.8rem 1.5rem;
+    font-size: 1.3rem;
+}
+.black{
+    background-color: black;
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
